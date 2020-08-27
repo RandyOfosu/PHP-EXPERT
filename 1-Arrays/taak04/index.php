@@ -41,8 +41,8 @@ $games = [
     ]
 ];
 
-echo "Games " . $games['sport']['naam']." ".$games['sport']['uitgever']." ".$games['sport']['prijs']."<br>";
-echo "Games " . $games['action']['naam']." ".$games['action']['uitgever']." ".$games['action']['prijs']."<br>";
-echo "Games " . $games['fps']['naam']." ".$games['fps']['uitgever']." ".$games['fps']['prijs']."<br>";
+echo $games['sport']['naam']." uit de categorie ".$games['sport']['uitgever']." kost ".$games['sport']['prijs']."<br>";
+echo $games['action']['naam']." uit de categorie ".$games['action']['uitgever']."kost ".$games['action']['prijs']."<br>";
+echo $games['fps']['naam']." uit de categorie ".$games['fps']['uitgever']." kost ".$games['fps']['prijs']."<br>";
 
 ?>
