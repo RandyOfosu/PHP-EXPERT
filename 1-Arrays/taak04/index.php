@@ -19,6 +19,9 @@ $speelgoed = [
     ],
 ];
 
+echo "Speelgoed " . $speelgoed[0]["naam"]." uit de categorie ".$speelgoed[0]["soort"]." kost ".$speelgoed[0]["prijs"].".<br>";
+echo "Speelgoed " . $speelgoed[1]["naam"]." uit de categorie ".$speelgoed[1]["soort"]." kost ".$speelgoed[1]["prijs"].".<br>";
+echo "Speelgoed " . $speelgoed[2]["naam"]." uit de categorie ".$speelgoed[2]["soort"]." kost ".$speelgoed[2]["prijs"].".<br>";
 
 $games = [
     'sport' => [
@@ -37,3 +40,9 @@ $games = [
         'prijs' => '40.00'
     ]
 ];
+
+echo "Games " . $games['sport']['naam']." ".$games['sport']['uitgever']." ".$games['sport']['prijs']."<br>";
+echo "Games " . $games['action']['naam']." ".$games['action']['uitgever']." ".$games['action']['prijs']."<br>";
+echo "Games " . $games['fps']['naam']." ".$games['fps']['uitgever']." ".$games['fps']['prijs']."<br>";
+
+?>
