@@ -78,18 +78,31 @@
     ?>
     <!-- Pas de code hieronder aan  -->
     <!-- Loop door de array $nieuwsberichten en toon de gegevens in de juist HTML-tags  -->
+<?php
 
+// var_dump($nieuwsberichten);
 
-    <h1></h1>
-    <div class="content">
+foreach ($nieuwsberichten as $categorie) {
+    echo "<h1>".$nieuwsberichten[0][1]."</h1>"."<br>";
+    echo '<div class="content">';
 
-        <h2 class="title"></h2>
-        <p class="title"></p>
-        <img src="" class="title">
+    echo $categorie[0]['beschrijving']."<br>";
+    echo $categorie[0]['image']."<br>";
+    echo '<h2 class="title">'.$categorie[0]["titel"]."</h2>";
+    echo '<img src="'.$categorie[0]['image'].'"class="title">';
+    echo "</div>";
+}
+    // <h1></h1>
+    // <div class="content">
 
-    </div>
+    //     <h2 class="title">
+    //     </h2>
+    //     <p class="title"></p>
+    //     <img src="" class="title">
 
+    // </div>
 
+?>
 </body>
 
 </html>

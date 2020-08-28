@@ -2,10 +2,10 @@
 
 $provincies = [
     [       
-    'provincie' => 'Groningen',
-    'hoofdstad' => 'Groningen',
-    'bevolking' => '583990',
-    'inwoners_gemeente' => 'Groningen'
+        'provincie' => 'Groningen',
+        'hoofdstad' => 'Groningen',
+        'bevolking' => '583990',
+        'inwoners_gemeente' => 'Groningen'
     ],
     [
         'provincie' => 'Overrijsel',
