@@ -23,7 +23,7 @@ Andere objecten hebben vaak weer andere _eigenschappen_. Het Engelse woord voor 
 
 ### Uitleg 3: methods (functionaliteiten)
 
-Alle eerder genoemde objecten hebben naast eigenschappen ook _methods_. Dit betekent simpelweg dat objeten dingen kunnen **doen!**. Een aantal voorbeelden
+Alle eerder genoemde objecten hebben naast eigenschappen ook _methods_. Dit betekent simpelweg dat objecten dingen kunnen **doen!**. Een aantal voorbeelden
 
 - een auto: kan starten, kan rijden, kan stoppen en kan keren
 - een mens: kan lopen, kan springen, kan tekenen, kan programmeren.
