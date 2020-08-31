@@ -82,8 +82,8 @@
 
 // var_dump($nieuwsberichten);
 
-foreach ($nieuwsberichten as $categorie) {
-    echo "<h1>".$nieuwsberichten[0][1]."</h1>"."<br>";
+foreach ($nieuwsberichten as $key => $categorie) {
+    echo "<h1>".$key."</h1>"."<br>";
     echo '<div class="content">';
 
     echo $categorie[0]['beschrijving']."<br>";
