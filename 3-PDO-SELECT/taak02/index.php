@@ -18,5 +18,4 @@ foreach($database_gegevens as $locatie){
   echo "Plaats: ".$locatie['city']. "<br>";
 }
 
-
 ?>
