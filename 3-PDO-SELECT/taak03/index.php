@@ -19,6 +19,4 @@ WHILE ($user = $statement->fetch()){
     echo $firstname ." ". $lastname ."<br>". $email ."<br>". $id . "<br>". $password;
 };
 
-
-
 ?>

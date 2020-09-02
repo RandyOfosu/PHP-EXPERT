@@ -17,11 +17,11 @@ class Scooter{
 
 $piaggio = new Scooter();
 $piaggio->kleur = 'rood';
-$piaggio->inhoudTank(6);
+$piaggio->tank = 6;
 
 $peugeot = new Scooter();
 $peugeot->kleur = 'zwart';
-$peugeot->inhoudTank(10);
+$peugeot->tank = 10;
 
 echo $piaggio->inhoudTank()."<br>";
 echo $peugeot->inhoudTank()."<br>";
