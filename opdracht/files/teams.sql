@@ -39,6 +39,7 @@ CREATE TABLE `teams` (
 INSERT INTO `teams` (`id`, `naam`) VALUES
 (0, 'TEAM SOAP'),
 (0, 'Goldenconvos'),
+(0, 'Goldenconvos'),
 (0, 'Team TCA');
 COMMIT;
 
