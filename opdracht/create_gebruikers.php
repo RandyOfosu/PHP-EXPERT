@@ -1,11 +1,6 @@
 <?php
 
-$db_loc = 'localhost';
-$db_name = 'voetbalclubasd';
-$db_user = 'root';
-$db_pw = '';
-
-$db_conn = new PDO("mysql:host=$db_loc;dbname=$db_name", $db_user, $db_pw);
+include 'include/db.conn.php';
 
 $voornaam = $_POST['form_voornaam'];
 $achternaam = $_POST['form_achternaam'];

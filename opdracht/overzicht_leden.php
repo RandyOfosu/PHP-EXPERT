@@ -1,11 +1,6 @@
 <?php
 
-$db_loc = 'localhost';
-$db_name = 'voetbalclubasd';
-$db_user = 'root';
-$db_pw = '';
-
-$db_conn = new PDO("mysql:host=$db_loc;dbname=$db_name", $db_user, $db_pw);
+include 'include/db.conn.php';
 
 $sql = "SELECT * FROM gebruikers";
 $stmt = $db_conn->prepare($sql);
@@ -56,6 +51,9 @@ $stmt->execute();
     </tr>
     <?php endforeach;?>
 </table>
+<p>Klik <a href="overzichten_bewerken.php">hier</a> als je de overzichten wil bewerken.</p>
+
+<p>En</p>
 
 <p>Klik <a href="overzicht_teams.php">hier</a> voor een overzicht van de teams.</p>
 
