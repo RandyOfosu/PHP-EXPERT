@@ -6,7 +6,7 @@ class Scooter{
     public $tank;
 
     public function inhoudTank(){
-        if($this->tank == 10){
+        if($this->tank =< 10){
             echo 'de emmer is vol!';
         }
         else{

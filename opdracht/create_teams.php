@@ -25,7 +25,7 @@ $stmt->execute();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zaal voetbalclubASD!</title>
 </head>
-<body>
+<body style="font-family: monospace; background-color: beige;">
 
     <h2>Je verzoek is correct afgehandeld</h2>
     <p>Alles is nu gereed, we wensen je succes!</p>

@@ -34,7 +34,9 @@ $stmt->execute();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zaal voetbalclubASD!</title>
 </head>
-<body style="font-family: monospace">
+<body style="font-family: monospace; background-color: beige;">
+
+
 
     <h2>Je verzoek is correct afgehandeld</h2>
     <p>Geef nu door hoe jouw team heet!</p>
