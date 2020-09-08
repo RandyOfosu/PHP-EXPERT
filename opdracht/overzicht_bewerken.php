@@ -4,13 +4,14 @@ include 'include/db.conn.php';
 
 $sql = "SELECT voornaam, achternaam FROM gebruikers VALUES (:ph_voornaam , :ph_achternaam)";
 
+$voornaam = $_POST['form_voornaam'];
+$achternaam = $_POST['form_achternaam'];
+
 $stmt = $db_conn->prepare($sql);
-$stmt = bindParam("ph:voornaam", $voornaam);
-$stmt = bindParam("ph:achternaam", $achternaam);
+$stmt->bindParam(":ph_voornaam", $voornaam);
+$stmt->bindParam(":ph_achternaam", $achternaam);
 $stmt->execute();
 
-$voornaam = $_POST['form_name'];
-$achternaam = $_POST['form_address'];
 ?>
 
 <!DOCTYPE html>
@@ -47,14 +48,6 @@ $achternaam = $_POST['form_address'];
         <input type="button" value="verzenden">
     </form>
     <br>
-    <table>
-        <tr>
-        <?php foreach($stmt as $gebruikers => $rows): ?>
-            <td><?=$rows['voornaam']?></td>
-            <td><?=$rows['achternaam']?></td>
-        </tr>
-        <?php endforeach ?>
-    </table>
 
 <p>Ga terug naar <a href="index.html">home</a>.</p>
 </body>
