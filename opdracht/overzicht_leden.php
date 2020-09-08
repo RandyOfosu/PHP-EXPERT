@@ -51,7 +51,7 @@ $stmt->execute();
     </tr>
     <?php endforeach;?>
 </table>
-<p>Klik <a href="overzicht_bewerken.php">hier</a> als je de overzichten wil bewerken.</p>
+<p>Klik <a href="overzicht_bewerken.html">hier</a> als je de overzichten wil bewerken.</p>
 
 <p>En</p>
 
