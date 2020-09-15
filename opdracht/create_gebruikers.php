@@ -9,7 +9,7 @@ $wachtwoord = $_POST['form_wachtwoord'];
 $team = $_POST['form_team'];
 $contributie = $_POST['form_contributie'];
 
-$sql = "INSERT INTO gebruikers (voornaam, achternaam, email, wachtwoord, team, contributie) VALUES (:ph_voornaam , :ph_achternaam , :ph_email , :ph_wachtwoord , :ph_team , :ph_contributie)";
+$sql = "INSERT INTO gebruikers (firstname, lastname, email, wachtwoord, team, contributie) VALUES (:ph_voornaam , :ph_achternaam , :ph_email , :ph_wachtwoord , :ph_team , :ph_contributie)";
 
 $stmt = $db_conn->prepare($sql);
 $stmt->bindParam(":ph_voornaam", $voornaam);

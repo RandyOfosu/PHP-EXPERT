@@ -6,6 +6,8 @@ $sql = "SELECT * FROM gebruikers";
 $stmt = $db_conn->prepare($sql);
 $stmt->execute();
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +32,7 @@ $stmt->execute();
 
 <body>
 
-<p><strong>Ga terug naar <a href="index.html">home</a>.</strong></p>
+<p><strong>Ga terug naar <a href="index.php">home</a>.</strong></p>
 
 <table>
     <caption><h4>Gegevens leden</h4></caption>
@@ -43,11 +45,14 @@ $stmt->execute();
     </tr>
     <tr>
     <?php foreach($stmt as $gebruikers => $rows): ?>
-        <td><?=$rows['voornaam']?></td>
-        <td><?=$rows['achternaam']?></td>
+        <?php $uid = $rows['id'] ?>
+        <td><?=$rows['firstname']?></td>
+        <td><?=$rows['lastname']?></td>
         <td><?=$rows['email']?></td>
         <td><?=$rows['team']?></td>
         <td><?=$rows['contributie']?></td>
+        <td><?="<a href='overzicht_bewerken.php?id='$uid'>update</a>"?></td>
+        <td><?="<a href='overzicht_verwijderen.php?id='$uid'>delete</a>"?></td>
     </tr>
     <?php endforeach;?>
 </table>

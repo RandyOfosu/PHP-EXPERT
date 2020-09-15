@@ -20,7 +20,7 @@
 </style>
 
 <body>
-    <caption><h3>Je kan hier specifieke gegevens opvragen en bewerken.</h3></caption>
+    <caption><h3>Je kan hier specifieke gegevens opvragen!</h3></caption>
     <form action="overzicht_bewerken.php" method="post">
         Voornaam:
         <br>
@@ -32,7 +32,13 @@
         <input type="button" value="verzenden">
     </form>
     <br>
+<caption><h3 style="color: red;">Je kan hier een account verwijderen!</h3></caption>
+    <form action="verwijdergegevens.php" method="post">
+        Voer id in: <br><input type="text" name="form_id" id=""><br>
+        <br>
+        <button type="submit">verzenden</button>
+    </form>
 
-<p>Ga terug naar <a href="index.html">home</a>.</p>
+<p>Ga terug naar <a href="index.php">home</a>.</p>
 </body>
 </html>

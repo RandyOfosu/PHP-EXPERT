@@ -30,7 +30,7 @@ $stmt->execute();
 
 <body>
 
-<p><strong>Ga terug naar <a href="index.html">home</a>.</strong></p>
+<p><strong>Ga terug naar <a href="index.php">home</a>.</strong></p>
 
 <table>
     <caption><h4>De teams</h4></caption>
@@ -39,7 +39,10 @@ $stmt->execute();
     </tr>
     <tr>
     <?php foreach($stmt as $teams => $rows): ?>
+        <?php $uid = $rows['id'] ?>
         <td><?=$rows['naam']?></td>
+        <td><?="<a href='overzicht_bewerken.php?id='$uid'>update</a>"?></td>
+        <td><?="<a href='overzicht_verwijderen.php?id='$uid'>delete</a>"?></td>
     </tr>
     <?php endforeach;?>
 </table>

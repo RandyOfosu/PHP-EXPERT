@@ -25,7 +25,7 @@ $stmt->execute();
     <h2>Je verzoek is correct afgehandeld</h2>
     <p>Alles is nu gereed, we wensen je succes!</p>
 
-    <p>Wil je nog iemand toevoegen klik dan op deze <a href="index.html">link</a>.</p>
+    <p>Wil je nog iemand toevoegen klik dan op deze <a href="index.php">link</a>.</p>
 
 </body>
 </html>
