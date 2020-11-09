@@ -36,7 +36,7 @@ include "include/db.conn.php";
       echo "<tr>". "<td> ID: ".$row['id'] . "</td><td>voornaam: " . $row['firstname'] . "</td><td> achternaam: " . $row['lastname'] . "</td><td> email: " . $row['email'] ."</td><td>"."<a href='overzicht_delete.php?subject=$idname'>delete row</a>"."<br>"."</td>"."</td><td>"."<a href='overzicht_bewerken.php?subject=$idname'>inspect row</a>"."<br>"."</td>"."</tr>";
     }
 
-    echo "<p>Ik wil mij graag <a href='brain.php'>inschrijven</a>.</p>";
+    echo "<p>Ik wil mij graag <a href='inschrijven.php'>inschrijven</a>.</p>";
 ?>
   </table>
 </body>

@@ -9,6 +9,25 @@ $uid = ($_GET['subject']);
 $stmt = $db_conn->prepare("SELECT * FROM gebruikers WHERE id = '$uid'");
 
 $stmt->execute();
+
+// var_dump($stmt->fetch(PDO::FETCH_ASSOC));
+$row = $stmt->fetch();
+$firstname = $row['firstname'];
+$lastname = $row['lastname'];
+$email = $row['email'];
+$id = $row['id'];
+$pw = $row['wachtwoord'];
+$team = $row['team'];
+$contri = $row['contributie'];
+?>
+
+<form action="">
+    <?php  ?>
+</form>
+
+
+<?php
+
 while($row = $stmt->fetch()){
     $firstname = $row['firstname'];
     $lastname = $row['lastname'];
@@ -37,6 +56,17 @@ $uwachtwoord = ($_GET['subject4']);
 $uteam = ($_GET['subject5']);
 $ucontributie = ($_GET['subject6']);
 
+
+$sql = "UPDATE gebruikers SET firstname = :firstname, lastname = :lastname, email = :email, wachtwoord = :ww, team = :t, contributie = :c WHERE id = :id";
+$statement = $db_conn->prepare($sql;
+$statement->bindParam(":firstname", $ufirstname );
+$statement->bindParam(":firstname", $ufirstname );
+$statement->bindParam(":firstname", $ufirstname );
+$statement->bindParam(":firstname", $ufirstname );
+$statement->bindParam(":firstname", $ufirstname );
+$statement->bindParam(":firstname", $ufirstname );
+$statement->bindParam(":firstname", $ufirstname );
+
 $stmt0 = $db_conn->prepare("UPDATE gebruikers SET firstname = '$ufirstname' WHERE id = '$uid'");
 $stmt1 = $db_conn->prepare("UPDATE gebruikers SET lastname = '$ulastname' WHERE id = '$uid'");
 $stmt2 = $db_conn->prepare("UPDATE gebruikers SET email = '$uemail' WHERE id = '$uid'");
@@ -50,4 +80,11 @@ $stmt2->execute();
 $stmt3->execute();
 $stmt4->execute();
 $stmt5->execute();
+
+if($stmt0->execute()){
+    //dan naar index
+    header('location: index.php');
+}else{
+    //geef de gebruiker een foutmelding
+}
 ?>
